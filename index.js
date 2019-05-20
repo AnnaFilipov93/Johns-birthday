@@ -24,7 +24,7 @@ function updateCounter(area) {
 }
 function OnlyLetters(inputL)
 {
-    var letters = /^[A-Za-z]+$/;
+    var letters = /^[A-Za-z ]+$/;
     if(inputL.value.match(letters))
     {
         return true;
@@ -37,19 +37,6 @@ function OnlyLetters(inputL)
     }
 }
 
-function zeroOrMore(num){
-
-    if (num < 0){
-
-        alert('0 or more');
-
-        return false;
-    }
-    else
-    {
-        return true;
-    }
-}
 
 
 document.addEventListener("mouseleave", function(event){

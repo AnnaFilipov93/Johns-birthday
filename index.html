@@ -136,9 +136,9 @@
             <form>
                 <ul>
                     <li>full name:</li>
-                    <input type="text" name="firstname"  pattern="[A-Za-z]+" required>
+                    <input type="text" name="firstname"  pattern="[A-Za-z ]+" required  onchange="OnlyLetters(this)" >
                     <li>Phone:</li>
-                    <input type="tel" name="phone"  pattern="[0-9]{9,10}" required>
+                    <input type="tel" name="phone"  pattern="[0-9]{9,10}" required  onchange="PhoneNumber(this)">
 
                     <li>Email:</li>
                     <input type="email" id="exampleFormControlInput1" placeholder="name@example.com" required>
